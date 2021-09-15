@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block css %}
+    <style>
+         body{
+            background-image: url("{% static 'images/book.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            font-family: serif;
+        }
+    </style>
+{% endblock css %}
+
+
+
+{% block content %}
+ <div class="col-5 mx-5" > 
+     <h1 style="text-align: center; margin-top: 50px;">About Us</h1>
+    <h3 class="about">We are the startup ideas, developed by Mr Shubham to help support the upcoming young entrepreneurs or the people who see them as a pioneer
+        in the ocean of possibilities. The world has infinite possibilities and problems, and Entrepreneurs are those people who find the solution in these problems 
+        and created their own start-up. With a aim to provide you the news of these startups, their success, their journey, and their failures. So that when you 
+        try to  establish your own startup, your are fully prepared and have the all neseccary knowledge. If you have any startup stories or experience of establishing your own 
+        brand, do share them with us. So be the part of our family and the share your thoughts with us, we love to hear them .</h3>
+    </div>
+{% endblock content %}
+    

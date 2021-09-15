@@ -1,0 +1,115 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+       
+        .container{
+           
+            color: rgb(8, 8, 10);
+            font-size:large;
+            font-family: serif;
+
+        }
+        .btn.btn-lg{
+            background-color: rgba(45, 155, 30, 0.973);
+            
+        }
+        .heading{
+            font-size: 3rem !important;
+            font-weight:bold ;
+            font-family: 'Luckiest Guy', cursive;
+            width: 700px;
+            margin: 0 auto;
+            margin-top: -50px;
+            text-shadow: 0 5px 3px rgb(38, 191, 218);
+        }
+        .container.section-2{
+            background-color:rgba(30, 221, 180, 0.856) ;
+        }
+        .lead-at{
+            padding: 1rem;
+        }
+        
+    
+    </style>
+{% endblock css %}
+
+
+{% block content %}
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <img src="{% static 'images/img.jpg' %}" alt="hero image" style="width: 70%; height: 90%;">
+            </div>
+            <div class="jumbotron jumbotron-fluid text-center ">
+                <div class="container">
+                    <h1 class="display-3"></h1>
+                    <p class="lead heading">The Dream is free . Hustle is sold separately !</p>
+                    
+                    
+                    <p class="lead-at">
+                        <a class="btn btn-dark" href="{% url 'news' %}" role="button">Get started with Ideas</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section-2">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="p-5 mt-5">
+                    <h3>
+                    <p class="text-large" >
+                        “Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me.”
+                    </p>
+                    </h3>
+                </div>
+            </div>
+                <div class="col-sm-6 mt-5">
+                    <iframe width ="560" height="315" src="https://www.youtube.com/embed/Tuw8hxrFBH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="container section-3">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="p-5 mt-5">
+                            <h3>
+                            <p class="text-large" >
+                                How a small town youth built a Rs 100 crore turnover 145-outlet tea chain with Rs 3 lakh in just 5 years
+                            </p>
+                            </h3>
+                        </div>
+                    </div>
+                        <div class="col-sm-6 mt-5">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0WCjygJ8pss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="container section-4">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="p-5 mt-5">
+                                    <h3>
+                                    <p class="text-large" >
+                                        Jeff Bezos's Eye Opening Speech
+                                    </p>
+                                    </h3>
+                                </div>
+                            </div>
+                                <div class="col-sm-6 mt-5">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WE8YB9YJLXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+
+</body>
+{% endblock content %}
+
+    
